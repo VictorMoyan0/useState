@@ -4,9 +4,10 @@ import './Style.css'
 function App() {
   const [count, setCount] = useState(0)
   const [count1, setCount1] = useState(0)
-  const [color, setColor] = useState('green')
+  const [color, setColor] = useState('black')
   const cambiarColor = () => {
-    if (color === 'green') setColor('blue')
+    if (color === 'black') setColor('green')
+    else if (color === 'green') setColor('blue')
     else if (color === 'blue') setColor('red')
     else setColor('green')
   }
